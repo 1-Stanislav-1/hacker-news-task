@@ -1,0 +1,132 @@
+.NewsItem {
+	width: 900px;
+	min-height: 550px;
+	margin: 50px auto;
+	box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.15), inset 0 0 10px rgba(255, 255, 255, 0.5);
+	border: 1px solid lightgrey;
+	border-radius: 30px;
+	background: linear-gradient(to bottom right, rgb(250, 250, 250), rgb(238, 238, 238) 40%, rgb(238, 238, 238) 60%, rgb(250, 250, 250));
+
+	.NewsItem-title {
+		width: 800px;
+		margin: 75px auto 0;
+		text-align: center;
+		color: rgb(71, 71, 71);
+		font-size: 34px;
+		font-weight: 100;
+	}
+
+	.NewsItem-container {
+		width: 800px;
+		margin: 50px auto;
+
+		.NewsItem-additionalData {
+			display: flex;
+			justify-content: space-between;
+			margin: 20px 35px 10px;
+
+			.NewsItem-by {
+				color: grey;
+				font-size: 17px;
+			}
+	
+			.NewsItem-date {
+				margin-right: 50px;
+				color: grey;
+				font-size: 17px;
+			}
+		}
+
+		.NewsItem-link {
+			display: block;
+			margin: 30px 35px 0;
+			color: rgb(71, 71, 71);
+			font-size: 13px;
+
+			&:hover {
+				color: black;
+			}
+		}
+
+		.NewsItem-buttonsContainer {
+			display: flex;
+			justify-content: space-between;
+			width: 680px;
+			margin: 50px auto 0;
+
+			.NewsItem-back, .NewsItem-Refresh {
+				width: 100px;
+				height: 40px;
+				border: 1px solid rgb(175, 175, 175);
+				border-radius: 20px;
+				background: rgba(236, 236, 236, 0.5);
+				color: rgb(71, 71, 71);
+				font-size: 18px;
+				transition: .5s;
+		
+				&:hover {
+					background: rgb(244, 244, 244)
+				}
+			}
+		}
+
+		.NewsItem-commentsTotal {
+			margin: 50px 35px 0;
+			color: rgb(71, 71, 71);
+			font-size: 20px;
+			font-weight: 100;
+		}
+
+		.NewsItem-loading {
+			display: block;
+			width: 250px;
+			height: 250px;
+			margin: 70px auto;
+			font-size: 25px;
+			font-weight: 100;
+		}
+
+		.NewsItem-commentsContainer {
+			width: 730px;
+			margin: auto;
+
+			.NewsItem-commentBlock {
+				margin: 10px 0 30px auto;
+				border: 1px solid lightgrey;
+				border-radius: 20px;
+				padding: 60px 60px;
+
+				.NewsItem-commentText{
+					margin-top: 50px;
+					text-align: justify;
+					line-height: 25px;
+				}
+
+				.NewsItem-commentAdditionalData {
+					display: flex;
+					justify-content: space-between;
+					color:grey;
+					font-size: 17px;
+				}
+
+				.NewsItem-showComments {
+					margin-top: 30px;
+					text-align: right;
+					color: rgb(71, 71, 71);
+					transition: .3s;
+					cursor: pointer;
+
+					&:hover {
+						color: grey;
+					}
+				}
+
+				.NewsItem-showCommentsLoading {
+					margin-top: 30px;
+					text-align: right;
+					color: rgb(71, 71, 71);
+				}
+			}
+		}
+	}
+}
